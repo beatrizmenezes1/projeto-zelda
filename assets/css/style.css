@@ -1,0 +1,100 @@
+
+/* RESET DE DOCUMENTO E CONFIGURAÇÃO PARA MENU*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    padding-left: 15%; 
+}
+
+/* MENU */
+.container-menu-lateral{
+    width: 15%;
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+
+    display: flex; 
+    
+    background-color: rgb(207, 213, 220);
+    box-shadow: 0px 0px 5px rgb(75, 11, 135),
+                0px 0px 5px rgb(18, 7, 89);
+}
+
+.line-menu-lateral{
+    width: 15%;
+    height: 100%;
+
+    background: linear-gradient(to top, rgb(89, 7, 88), rgb(18, 7, 89), rgb(11, 85, 135), rgb(89, 7, 88));
+    background-size: 100% 400%;
+    animation-name: animacao;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacao{
+    0%{
+        background-position-y: 0%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+}
+
+.content-menu-lateral{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#sword-link-zelda{
+    height: 45%;
+    margin-bottom: 50%;
+
+    /* background-color: rgb(255, 255, 255); */
+    filter: drop-shadow(0px 0px 5px rgb(255, 160, 7));
+}
+
+.item-menu-lateral{
+    width: 90%;
+    height: 5%;
+    margin-bottom: 5%;
+
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 3px;
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.item-menu-lateral:hover{
+    background: linear-gradient(to right, rgb(41, 7, 89), rgb(100, 11, 135));
+    transform: scale(1.1);
+
+    color: white;
+}
+
+/* CONTEUDO */
